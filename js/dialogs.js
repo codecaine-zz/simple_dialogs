@@ -7,15 +7,14 @@ export const DialogIcons = {
     QUESTION: 'question'
 };
 
-export function showAlertDialog(title, text, icon = DialogIcons.INFO, isModal = true) {
+export function showAlertDialog(title, text, icon = DialogIcons.INFO, isModal = true, resultCallback) {
     return Swal.fire({
         title: title,
         text: text,
         icon: icon,
         confirmButtonText: 'OK',
         allowOutsideClick: !isModal,
-        backdrop: isModal,
-        showCancelButton: showCancelButton
+        backdrop: isModal
     }).then((result) => {
         if (resultCallback) resultCallback(result);
     });

@@ -5,7 +5,7 @@ import {
     showConfirmationDialog,
     showToastNotification,
     showCustomDialog
-} from '../dialogs.js';
+} from './dialogs.js';
 
 document.getElementById('alertButton').addEventListener('click', () => {
     showAlertDialog('Alert Title', 'This is an alert message', DialogIcons.WARNING, true);

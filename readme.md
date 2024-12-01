@@ -5,11 +5,13 @@ This application demonstrates various dialog types using SweetAlert2.
 ## Installation
 
 1. Clone the repository:
+
     ```sh
     git clone https://github.com/codecaine-zz/simple_dialogs.git
     ```
 
 2. Navigate to the project directory:
+
     ```sh
     cd simple_dialogs
     ```
@@ -30,4 +32,3 @@ Click the buttons to trigger different dialogs:
 ## Customization
 
 Modify the `dialogs.js` file to customize the dialogs.
-
